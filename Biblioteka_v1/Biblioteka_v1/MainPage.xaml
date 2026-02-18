@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Biblioteka_v1.MainPage"
+             Title="">
+    <StackLayout  VerticalOptions="Center" HorizontalOptions="Center">
+        <Border Stroke="Purple" StrokeThickness="2" Padding="40">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="40,40,40,40"/>
+            </Border.StrokeShape>
+            <StackLayout x:Name="FormIn" VerticalOptions="Center" HorizontalOptions="Center">
+            
+                
+
+                <Label Text="Księgarnia Alan" HorizontalTextAlignment="Center"/>
+            
+            <Grid x:Name="LogIn" IsVisible="True" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Entry x:Name="LI_mail" Placeholder="mail123@mail.com" ClearButtonVisibility="WhileEditing" Keyboard="Text" HorizontalTextAlignment="Center" Grid.Row="0" WidthRequest="250"  Margin="0, 0, 00, 20"/>
+                <Entry x:Name="LI_pass" Placeholder="Password" ClearButtonVisibility="WhileEditing" Keyboard="Text" HorizontalTextAlignment="Center" Grid.Row="1" WidthRequest="250" Margin="0, 0, 0, 20"/>
+
+                <Button x:Name="LI_btnLogIn" Text="Zaloguj się"  Grid.Row="2" Margin="0, 0, 0, 20" MaximumHeightRequest="100" WidthRequest="150" Clicked="LI_btnLogIn_Clicked"/>
+                <Button x:Name="LI_btnSignIn" Text="Utwóz konoto"  Grid.Row="3" Padding="0, 0, 0, 0" BackgroundColor="Grey" MaximumHeightRequest="30"  WidthRequest="100" Clicked="LogOrSingIn_Clicked"/>
+            </Grid>
+
+                <Grid x:Name="SingIn" IsVisible="False">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+
+                <Entry x:Name="SI_fname" Placeholder="Imie" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="0"  WidthRequest="250"  Margin="0, 0, 00, 20"/>
+                <Entry x:Name="SI_Lname" Placeholder="Nazwisko" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="1" WidthRequest="250"  Margin="0, 0, 00, 20"/>
+                <Entry x:Name="SI_mail" Placeholder="mail123@mail.com" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="2"  WidthRequest="250"  Margin="0, 0, 00, 20"/>
+                <Entry x:Name="SI_pass" Placeholder="Password" ClearButtonVisibility="WhileEditing" Keyboard="Text" Grid.Row="3" WidthRequest="250"  Margin="0, 0, 00, 20"/>
+
+                <Button x:Name="SI_btnSignIn" Text="Utwóz konoto"  Grid.Row="4" Margin="0, 0, 0, 20" MaximumHeightRequest="100" WidthRequest="150" Clicked="SI_btnSignIn_Clicked"/>
+                <Button x:Name="SI_btnLogIn" Text="Zaloguj się"  Grid.Row="5" Padding="0, 0, 0, 0" BackgroundColor="Grey" MaximumHeightRequest="30"  WidthRequest="100" Clicked="LogOrSingIn_Clicked"/>
+            </Grid>
+            
+        </StackLayout>
+    </Border>
+    </StackLayout>
+</ContentPage>

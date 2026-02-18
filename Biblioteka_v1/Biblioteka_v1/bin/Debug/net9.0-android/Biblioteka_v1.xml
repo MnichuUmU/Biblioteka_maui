@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Biblioteka_v1</name>
+    </assembly>
+    <members>
+        <member name="M:Biblioteka_v1.LocalDbService.CreateKsiazka(Biblioteka_v1.Ksiazka)">
+            METODY DO KSIAZKA
+        </member>
+        <member name="M:Biblioteka_v1.LocalDbService.CreateAcc(Biblioteka_v1.Accounts)">
+            METODY DO ACCOUNTS
+        </member>
+        <member name="M:Biblioteka_v1.LocalDbService.CreateLog(System.Int32,System.Int32,System.Boolean)">
+            METODY DO LOGOW
+        </member>
+        <member name="M:Biblioteka_v1.MainPage.LogOrSingIn_Clicked(System.Object,System.EventArgs)">
+            <summary>
+            CO MAM
+            - wyświetlanie książek
+            - zmiena z książki do dodaj książki i vice versa
+            - baze danyuch
+            - początkowe wartości
+            - dodawaniek  kont i logowanie
+            - wyszukiwanie
+            - dodawanie książek
+            - wypożycz / zwróć zalerznie od stanu
+            - zakłądka Wyporzyczone
+            - data wyporzczenia
+            </summary>
+            /// <summary>
+            CO TRZEBA
+            - historia wyporzyczeń (per użytkownik)(w admin panel)
+            - filtrowanie
+            - Kategorie
+            </summary>
+        </member>
+        <member name="T:Biblioteka_v1.Resource">
+            <summary>
+            Android Resource Designer class.
+            Exposes the Android Resource designer assembly into the project Namespace.
+            </summary>
+        </member>
+    </members>
+</doc>

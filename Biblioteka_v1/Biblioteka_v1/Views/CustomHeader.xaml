@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Biblioteka_v1.Views"
+             x:Class="Biblioteka_v1.Views.CustomHeader">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        
+        <Button x:Name="HeaderBooks" Grid.Column="0" Grid.Row="0"  BackgroundColor="Purple" Padding="0, 0, 0, 0" Text="Wyporzycz Książkę" Clicked="HeaderBooks_Clicked" CornerRadius="0"/>
+
+        <Button x:Name="HeaderAddBooks" Grid.Column="1" Grid.Row="0" BackgroundColor="Purple" Padding="0, 0, 0, 0" Text="Dodaj Książkę" Clicked="HeaderAddBooks_Clicked" CornerRadius="0"/>
+
+        <Button x:Name="HeaderRentedRn" Grid.Column="2" Grid.Row="0" BackgroundColor="Purple" Padding="0, 0, 0, 0" Text="Aktualnie wyporzyczone" Clicked="HeaderRentedRn_Clicked" CornerRadius="0"/>
+
+        <Button x:Name="HeaderAdminPanel" Grid.ColumnSpan="3" Grid.Row="1" BackgroundColor="Purple" Padding="0, 0, 0, 0" Text="Panel Administratora" Clicked="HeaderAdminPanel_Clicked" CornerRadius="0" IsVisible="False" Margin="0,2,0,0"/>
+
+    </Grid>
+</ContentView>
