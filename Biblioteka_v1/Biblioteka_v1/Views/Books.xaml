@@ -17,7 +17,7 @@
             <Border Stroke="Purple" StrokeThickness="2" Margin="5,10">
 
                 <StackLayout Margin="10,5">
-                    <Entry x:Name="ent_search" Placeholder="Autor"/>
+                    <Entry x:Name="ent_search" Placeholder="Szukaj"/>
                     <Button x:Name="btn_search" Clicked="btn_search_Clicked"  BackgroundColor="Purple" Padding="0, 0, 0, 0" Text="Szukaj"/>
 
                 </StackLayout>
