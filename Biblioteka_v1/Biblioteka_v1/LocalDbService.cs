@@ -109,7 +109,7 @@ namespace Biblioteka_v1
         {
             await Init();
 
-            string sql = "SELECT * FROM ksiazka WHERE tytle LIKE ? OR author LIKE ?";
+            string sql = "SELECT * FROM ksiazka WHERE (tytle LIKE ? OR author LIKE ?) AND stan='tak'";
             string temp = $"%{text}%";
             return await _connection.QueryAsync<Ksiazka>(sql , temp , temp);
             
